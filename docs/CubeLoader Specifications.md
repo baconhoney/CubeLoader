@@ -308,6 +308,7 @@ A suggestion, not fixed. It describes what each part does and how they interact.
   - Long lists scroll (touch drag and mouse wheel, visible scrollbar), load lazily when large, and can be searched, filtered and sorted.
   - Non-blocking feedback (toast/status line) for errors such as Cube lost, invalid file, Program crashed. Long operations never freeze the UI.
   - Shows only what the current usage mode allows.
+  - Multi-language support: Magyar, Angol, Német(?), etc.
 
 
 
@@ -366,7 +367,7 @@ A Program is stopped on request within 1s (10s for testing), otherwise its proce
 - **Connecting to Cubes:** If another host holds the lock, the host says so and waits; it cannot take the Cube over. If the Cube does not answer for `[TBD]` seconds, the host shows a status indicator, keeps retrying and resumes playback when the Cube returns. A Cube with an unsupported version or profile is refused with a clear message.
 - **Cube address:** discovered automatically, or entered manually (bypasses discovery; discovery still feeds the info panel). Only one Cube is controlled at a time (for now).
 - Files that cannot be played (invalid or incompatible) are listed as unavailable, with the reason.
-
+- **Language selector:** changes the GUI language to the selected one. Should always be easily visible on screen.
 
 
 ## 12. Config
